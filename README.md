@@ -3,7 +3,8 @@ Fully trained model with large Imagenet dataset using ResNet50
 
 **Data Preparation:** I load the ImageNet dataset, specifically the training images, and preprocess them. The dataset is organized into folders, each representing a class, and I load a few images from each class.
     
-![download](https://github.com/Mukhriddin19980901/Imagenet_dataset/assets/86052339/51cfc702-b488-44c6-9e5a-c38fdf72d3c9)
+![](https://github.com/Mukhriddin19980901/Imagenet_dataset/assets/86052339/51cfc702-b488-44c6-9e5a-c38fdf72d3c9)
+
 
 **Model Building (Initial Attempt):** I instantiate a ResNet-50 model with pre-trained weights from ImageNet and include the top layers for classification. Then, I make predictions on the loaded dataset and evaluate the model's accuracy.
 
