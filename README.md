@@ -5,10 +5,32 @@ Fully trained model with large Imagenet dataset using ResNet50
     
 ![](https://github.com/Mukhriddin19980901/Imagenet_dataset/assets/86052339/51cfc702-b488-44c6-9e5a-c38fdf72d3c9)
 
+![](https://github.com/Mukhriddin19980901/Imagenet_dataset/assets/86052339/6cca870f-17d7-46b2-9653-b8048b27c0bf)
+
 
 **Model Building (Initial Attempt):** I instantiate a ResNet-50 model with pre-trained weights from ImageNet and include the top layers for classification. Then, I make predictions on the loaded dataset and evaluate the model's accuracy.
 
+     102967424/102967424 [==============================] - 1s 0us/step
+     
+     Model: "resnet50"
+     
+     Layer (type)                   Output Shape         Param #     Connected to                     
+     ==================================================================================================
+     input_1 (InputLayer)           [(None, 224, 224, 3  0           []                               )]    
+
+     .....
+
+     predictions (Dense)            (None, 1000)         2049000     ['avg_pool[0][0]']               
+                                                                                                  
+     ==================================================================================================
+     
+     _______________________________________________________________________________________
+     
 **Visualization:** I visualize some of the original images and the corresponding predictions made by the initial ResNet-50 model.
+
+![](https://github.com/Mukhriddin19980901/Imagenet_dataset/assets/86052339/75355402-7256-42fc-acec-1d897c7dd8ff)
+
+
 
 **Transfer Learning:** Next, I attempt transfer learning by using the ResNet-50 architecture as a feature extractor. I freeze the pre-trained layers and add new fully connected layers on top for fine-tuning to my specific classification task.
 
